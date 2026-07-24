@@ -1,5 +1,9 @@
 # Packet Analyzer in Java
 
+## Demo
+
+![Packet Analyzer Output](images/Output.png)
+
 A multithreaded packet analyzer developed in Java that demonstrates packet parsing, Deep Packet Inspection (DPI), connection tracking, rule-based filtering, and load balancing using object-oriented design principles.
 
 ---
