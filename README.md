@@ -56,7 +56,7 @@ src/
 ## How to Run
 
 1. Clone the repository.
-2. Open it in IntelliJ IDEA or Eclipse.
+2. Open it in IntelliJ IDEA or Eclipse or VS Code.
 3. Import it as a Maven project.
 4. Run `Main.java`.
 
