@@ -1,19 +1,91 @@
-# Packet Analyzer and Deep Packet Inspection (DPI) Engine - Java Port
+# Packet Analyzer in Java
 
-This is a full Java port of the high-performance C++ Packet Analyzer project.
+A multithreaded packet analyzer developed in Java that demonstrates packet parsing, Deep Packet Inspection (DPI), connection tracking, rule-based filtering, and load balancing using object-oriented design principles.
 
-## Key Features
-- **Packet Parser**: Handles Ethernet, VLAN, IPv4, TCP, UDP frames.
-- **PCAP Reader**: Native Java binary stream parser.
-- **Connection Tracker**: Thread-safe 5-tuple flow state management.
-- **SNI Extractor**: Extracts TLS Client Hello SNI and HTTP Host headers.
-- **DPI Engine**: Signature matching & protocol detection.
-- **Fast Path Cache**: High-speed action resolution for established flows.
-- **Load Balancer**: Multi-queue worker dispatching.
+---
 
-## Build and Run
+## Features
 
-```bash
-mvn clean package
-java -jar target/packet-analyzer-1.0.0.jar
+- Packet parsing
+- Deep Packet Inspection (DPI)
+- Connection tracking
+- Rule-based packet filtering
+- Multithreaded packet processing
+- Load balancing
+- Fast-path packet optimization
+- TLS SNI extraction
+- Maven project structure
+
+---
+
+## Technologies Used
+
+- Java 11
+- Maven
+- Object-Oriented Programming (OOP)
+- Multithreading
+
+---
+
+## Project Structure
+
+```text
+src/
+└── main/
+    └── java/
+        ├── Main.java
+        ├── Packet.java
+        ├── PacketParser.java
+        ├── Connection.java
+        ├── ConnectionTracker.java
+        ├── DpiEngine.java
+        ├── RuleManager.java
+        ├── PcapReader.java
+        ├── LoadBalancer.java
+        ├── FastPath.java
+        ├── SniExtractor.java
+        └── ThreadSafeQueue.java
 ```
+
+---
+
+## How to Run
+
+1. Clone the repository.
+2. Open it in IntelliJ IDEA or Eclipse.
+3. Import it as a Maven project.
+4. Run `Main.java`.
+
+---
+
+## Sample Output
+
+```
+Packet Analyzer & Multithreaded DPI Engine
+
+Initialized System with Worker Threads
+
+Injecting Synthetic Packets...
+
+HTTPS Packet -> ALLOW
+HTTP Packet -> ALERT
+HTTP Packet -> DROP
+
+Connection Summary Generated
+```
+
+---
+
+## Future Improvements
+
+- Live packet capture using Pcap4J
+- PCAP file analysis
+- GUI dashboard
+- Export packet analysis reports
+- Real-time traffic monitoring
+
+---
+
+## Author
+
+**Jyotiranjan Acharya**
